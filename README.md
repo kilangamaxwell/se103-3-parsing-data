@@ -32,7 +32,7 @@ As you already know, each line in a text file ends with a newline character, \n.
 Hence, a blank line can be identified in this file as two consecutive characters of newline: \n\n. The first one is the ending of the previous line, and the second one is the blank line containing nothing but \n.
 You task is to parse the files and to create a data structure that is more easy to work with in Python. In this case, we describe each student with a dictionary, and we store all the students in a list.
 
-#######################################################################################################################################################################
+####
 Step 1 - Simple Classroom
 In this step, you’ll implement the function parse_simple_classroom(file_path) which takes the path of a simple classroom file, as shown in the previous page, and parse it.
 The file path is classroom_simple.txt, the same file we showd in the previous page.
@@ -57,17 +57,17 @@ So the complete list of students should be:
   },
   ...
 ]
-#######################################################################################################################################################################
+###
 Don’t change the file
 Please do not change the file, since the automatic tests (explained below) rely that the content of the file stay the same.
 If you want to make changes to the file, you can copy it, change it and then restore it later.
-#######################################################################################################################################################################
+###
 💡 Hint
 There are some different ways to solve it:
 You can parse the file line-by-line and handle it.
 You can read the entire text file as a string, and then perform string manipulation on the entire text, with functions that you already know.
 Both ways are fine, choose the right one for you. It’s OK if you still don’t know how to approach it, the best way would be to just try! Play with the file.
-#######################################################################################################################################################################
+###
 Notes & Assumptions
 Return value from your function
 Note that your function must return the above list. Do not print it inside the function.
@@ -85,11 +85,11 @@ Newline between students
 Assume there is always exactly one newline between two records of students.
 Testing Your Code
 We provide tests for you so you can test that your code works properly and correctly styled.
-#######################################################################################################################################################################
+###
 Functionality Tests
 There is only one test and it checks that the return value from your function is the same as expected.
 
-#######################################################################################################################################################################
+###
 Step 2 - Student's Average
 In this step, you’ll write a function that gets a name of a student and calculates their grades average.
 Specification
@@ -127,13 +127,13 @@ If you didn’t pass the tests, fix the errors and try it again.
 Bonus - Complex Classroom
 Bonus Step
 This is a bonus step, you can skip it if you want.
-################################################################################################################################################################
+###
 Specification
 In this step, we will not assume anymore there are only 3 grades for a student, and we will not assume there is exactly one newline between each student.
 Examine the file classroom_complex.txt (in the file tree on the left), where there is an arbitrary number of newlines (sometimes even no newline at all) between each student.
 In addition, each student have a different number of grades, but you can assume it’s at least one.
 Create a new function called parse_complex_classroom(file_path) that takes a file path of a complex classroom, and returns the same structure as before, with all the available grades.
-################################################################################################################################################################
+###
 Testing Your Code
 We provide tests for you so you can test that your code works properly and correctly styled.
 Functionality Tests
